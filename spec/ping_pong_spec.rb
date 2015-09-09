@@ -7,4 +7,8 @@ describe("Fixnum#ping_pong") do
     expect((6).ping_pong()).to(eq([]))
   end
 
+  it("Creates array with 'ping-pong' string") do
+    expect((16).ping_pong()).to(eq(["ping-pong"]))
+  end
+
 end

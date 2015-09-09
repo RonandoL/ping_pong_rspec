@@ -5,7 +5,9 @@ class Fixnum
     numbers = []
 
     1.upto(self) do |i|
-      
+      if (i % 3 == 0) && (i % 5 == 0)
+        numbers.push("ping-pong")
+      end
     end
     numbers
   end
