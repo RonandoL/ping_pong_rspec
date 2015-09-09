@@ -4,7 +4,7 @@ class Fixnum
     pong = 5
     array = []
 
-    1.upto(self) do |i|
+    1.upto(self.abs) do |i|
       if (i % ping == 0) && (i % pong == 0)
         array.push("ping-pong")
       elsif (i % ping == 0)
