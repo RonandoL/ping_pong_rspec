@@ -5,10 +5,12 @@ class Fixnum
     array = []
 
     1.upto(self) do |i|
-      if (i % 3 == 0) && (i % 5 == 0)
+      if (i % ping == 0) && (i % pong == 0)
         array.push("ping-pong")
-      elsif (i % 3 == 0)
-          array.push("ping")
+      elsif (i % ping == 0)
+        array.push("ping")
+      elsif (i % pong == 0)
+        array.push("pong")
       else
         array.push(i)
       end
